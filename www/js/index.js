@@ -1,6 +1,7 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
+//creates variables
 
 document.addEventListener("deviceready", onDeviceReady, false);
 		
@@ -10,6 +11,7 @@ function updateDisplay() {
 	$("#resumed").text("Application paused: " + paused_count);
 	$("#paused").text("Application resumed: " + resumed_count);
 }
+//shows the count
 
 
 // device APIs are available
@@ -42,3 +44,4 @@ function updateDisplay() {
 	    
 	alert("resume");
     }
+//adds +1 to variable
